@@ -124,6 +124,14 @@ public class Main extends JFrame {
 		contentPane.add(btnFlag5);
 		
 		JButton btnFlag10 = new JButton("#10");
+		btnFlag10.setIcon(new ImageIcon("res/germany.png"));
+		btnFlag10.setText("");
+		btnFlag10.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				btnFlag10_mouseClicked(e);
+			}
+		});
 		btnFlag10.setBounds(290, 62, 60, 40);
 		contentPane.add(btnFlag10);
 		
@@ -173,9 +181,12 @@ public class Main extends JFrame {
 	}
 
 	protected void btnFlag1_mouseClicked(MouseEvent arg0) {
-		this.txtCountryName.setText("Canada");
-		this.txtCapital.setText("Ottawa");
-		this.txtCurrency.setText("Dollar");
-		this.txtLanguage.setText("English, French");
+		
+	}
+	protected void btnFlag10_mouseClicked(MouseEvent e) {
+		this.txtCountryName.setText("Germany");
+		this.txtCapital.setText("Berlin");
+		this.txtCurrency.setText("Euro");
+		this.txtLanguage.setText("German");
 	}
 }
