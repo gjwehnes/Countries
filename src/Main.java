@@ -59,7 +59,14 @@ public class Main extends JFrame {
 		btnFlag1.setBounds(10, 11, 60, 40);
 		contentPane.add(btnFlag1);
 		
-		JButton btnFlag2 = new JButton("#2");
+		JButton btnFlag2 = new JButton("");
+		btnFlag1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				btnFlag3_mouseClicked(arg0);
+			}
+		});
+		btnFlag2.setIcon(new ImageIcon("res/denmark.png"));
 		btnFlag2.setBounds(80, 11, 60, 40);
 		contentPane.add(btnFlag2);
 		
@@ -192,5 +199,12 @@ public class Main extends JFrame {
 		this.txtCapital.setText("Niamey");
 		this.txtCurrency.setText("West African CFA franc");
 		this.txtLanguage.setText("French");
+	}
+	
+	protected void btnFlag3_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Denmark");
+		this.txtCapital.setText("Copenhagen");
+		this.txtCurrency.setText("Danish Krone");
+		this.txtLanguage.setText("Danish");
 	}
 }
