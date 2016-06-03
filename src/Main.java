@@ -101,7 +101,14 @@ public class Main extends JFrame {
 		btnFlag12.setBounds(80, 113, 60, 40);
 		contentPane.add(btnFlag12);
 		
-		JButton btnFlag13 = new JButton("#13");
+		JButton btnFlag13 = new JButton("");
+		btnFlag13.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				do_btnFlag13_mouseClicked(arg0);
+			}
+		});
+		btnFlag13.setIcon(new ImageIcon("res/nigeria.png"));
 		btnFlag13.setBounds(150, 113, 60, 40);
 		contentPane.add(btnFlag13);
 		
@@ -204,5 +211,12 @@ public class Main extends JFrame {
 		this.txtCapital.setText("Niamey");
 		this.txtCurrency.setText("West African CFA franc");
 		this.txtLanguage.setText("French");
+	}
+	
+	protected void do_btnFlag13_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Nigeria");
+		this.txtCapital.setText("Abuja");
+		this.txtCurrency.setText("Naira");
+		this.txtLanguage.setText("English");
 	}
 }
