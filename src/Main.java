@@ -119,19 +119,18 @@ public class Main extends JFrame {
 		btnFlag19.setBounds(220, 164, 60, 40);
 		contentPane.add(btnFlag19);
 		
-		JButton btnFlag5 = new JButton("#5");
+		JButton btnFlag5 = new JButton("");
+		btnFlag5.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				do_btnFlag5_mouseClicked(arg0);
+			}
+		});
+		btnFlag5.setIcon(new ImageIcon("res/niger.png"));
 		btnFlag5.setBounds(290, 11, 60, 40);
 		contentPane.add(btnFlag5);
 		
 		JButton btnFlag10 = new JButton("#10");
-		btnFlag10.setIcon(new ImageIcon("res/germany.png"));
-		btnFlag10.setText("");
-		btnFlag10.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				btnFlag10_mouseClicked(e);
-			}
-		});
 		btnFlag10.setBounds(290, 62, 60, 40);
 		contentPane.add(btnFlag10);
 		
@@ -181,12 +180,17 @@ public class Main extends JFrame {
 	}
 
 	protected void btnFlag1_mouseClicked(MouseEvent arg0) {
-		
+		this.txtCountryName.setText("Canada");
+		this.txtCapital.setText("Ottawa");
+		this.txtCurrency.setText("Dollar");
+		this.txtLanguage.setText("English, French");
 	}
-	protected void btnFlag10_mouseClicked(MouseEvent e) {
-		this.txtCountryName.setText("Germany");
-		this.txtCapital.setText("Berlin");
-		this.txtCurrency.setText("Euro");
-		this.txtLanguage.setText("German");
+	
+	
+	protected void do_btnFlag5_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Niger");
+		this.txtCapital.setText("Niamey");
+		this.txtCurrency.setText("West African CFA franc");
+		this.txtLanguage.setText("French");
 	}
 }
