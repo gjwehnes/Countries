@@ -59,7 +59,13 @@ public class Main extends JFrame {
 		btnFlag1.setBounds(10, 11, 60, 40);
 		contentPane.add(btnFlag1);
 		
-		JButton btnFlag2 = new JButton("#2");
+		JButton btnFlag2 = new JButton("");
+		btnFlag2.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent arg0) {
+				btnFlag2_mouseClicked(arg0);
+			}
+		});
+		btnFlag2.setIcon(new ImageIcon("res/kyrgyzstan.png"));
 		btnFlag2.setBounds(80, 11, 60, 40);
 		contentPane.add(btnFlag2);
 		
@@ -186,6 +192,12 @@ public class Main extends JFrame {
 		this.txtLanguage.setText("English, French");
 	}
 	
+	protected void btnFlag2_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Kyrgyzstan");
+		this.txtCapital.setText("Bishkek");
+		this.txtCurrency.setText("Kyrgyzstani som");
+		this.txtLanguage.setText("Kyrgyz, Russian");
+	}
 	
 	protected void do_btnFlag5_mouseClicked(MouseEvent arg0) {
 		this.txtCountryName.setText("Niger");
