@@ -59,18 +59,18 @@ public class Main extends JFrame {
 		btnFlag1.setBounds(10, 11, 60, 40);
 		contentPane.add(btnFlag1);
 		
-		JButton btnFlag2 = new JButton("");
-		btnFlag1.addMouseListener(new MouseAdapter() {
+		JButton btnFlag2 = new JButton("#2");
+		btnFlag2.setBounds(80, 11, 60, 40);
+		contentPane.add(btnFlag2);
+		
+		JButton btnFlag3 = new JButton("");
+		btnFlag3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				btnFlag3_mouseClicked(arg0);
 			}
 		});
-		btnFlag2.setIcon(new ImageIcon("res/denmark.png"));
-		btnFlag2.setBounds(80, 11, 60, 40);
-		contentPane.add(btnFlag2);
-		
-		JButton btnFlag3 = new JButton("#3");
+		btnFlag3.setIcon(new ImageIcon("res/denmark.png"));
 		btnFlag3.setBounds(150, 11, 60, 40);
 		contentPane.add(btnFlag3);
 		
