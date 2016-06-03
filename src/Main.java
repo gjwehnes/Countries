@@ -1,10 +1,8 @@
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
@@ -12,6 +10,7 @@ import javax.swing.ImageIcon;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+@SuppressWarnings("serial")
 public class Main extends JFrame {
 
 	private JPanel contentPane;
@@ -135,7 +134,14 @@ public class Main extends JFrame {
 		btnFlag10.setBounds(290, 62, 60, 40);
 		contentPane.add(btnFlag10);
 		
-		JButton btnFlag15 = new JButton("#15");
+		JButton btnFlag15 = new JButton("");
+		btnFlag15.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				btnFlag15_mouseClicked(arg0);
+			}
+		});
+		btnFlag15.setIcon(new ImageIcon("res/morocco.png"));
 		btnFlag15.setBounds(290, 113, 60, 40);
 		contentPane.add(btnFlag15);
 		
@@ -188,5 +194,12 @@ public class Main extends JFrame {
 		this.txtCapital.setText("Berlin");
 		this.txtCurrency.setText("Euro");
 		this.txtLanguage.setText("German");
+	}
+	
+	protected void btnFlag15_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Morocco");
+		this.txtCapital.setText("Rabat");
+		this.txtCurrency.setText("Dirham");
+		this.txtLanguage.setText("Arabic, Berber");
 	}
 }
