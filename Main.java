@@ -63,31 +63,13 @@ public class Main extends JFrame {
 		btnFlag2.setBounds(80, 11, 60, 40);
 		contentPane.add(btnFlag2);
 		
-		JButton btnFlag3 = new JButton("");
-		btnFlag3.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent arg0) {
-				btnFlag3_mouseClicked(arg0);
-			}
-		});
-		btnFlag3.setIcon(new ImageIcon("res/denmark.png"));
+		JButton btnFlag3 = new JButton("#3");
 		btnFlag3.setBounds(150, 11, 60, 40);
 		contentPane.add(btnFlag3);
 		
 		JButton btnFlag4 = new JButton("#4");
 		btnFlag4.setBounds(220, 11, 60, 40);
 		contentPane.add(btnFlag4);
-		
-		JButton btnFlag5 = new JButton("");
-		btnFlag5.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent arg0) {
-				do_btnFlag5_mouseClicked(arg0);
-			}
-		});
-		btnFlag5.setIcon(new ImageIcon("res/niger.png"));
-		btnFlag5.setBounds(290, 11, 60, 40);
-		contentPane.add(btnFlag5);
 		
 		JButton btnFlag6 = new JButton("#6");
 		btnFlag6.setBounds(10, 62, 60, 40);
@@ -125,7 +107,8 @@ public class Main extends JFrame {
 		btnFlag16.setBounds(10, 164, 60, 40);
 		contentPane.add(btnFlag16);
 		
-		JButton btnFlag17 = new JButton("#17");
+		JButton btnFlag17 = new JButton("17");
+		btnFlag17.setIcon(new ImageIcon("res/niger-flag.gif"));
 		btnFlag17.setBounds(80, 164, 60, 40);
 		contentPane.add(btnFlag17);
 		
@@ -136,6 +119,10 @@ public class Main extends JFrame {
 		JButton btnFlag19 = new JButton("#19");
 		btnFlag19.setBounds(220, 164, 60, 40);
 		contentPane.add(btnFlag19);
+		
+		JButton btnFlag5 = new JButton("#5");
+		btnFlag5.setBounds(290, 11, 60, 40);
+		contentPane.add(btnFlag5);
 		
 		JButton btnFlag10 = new JButton("#10");
 		btnFlag10.setBounds(290, 62, 60, 40);
@@ -192,19 +179,11 @@ public class Main extends JFrame {
 		this.txtCurrency.setText("Dollar");
 		this.txtLanguage.setText("English, French");
 	}
-	
-	
-	protected void do_btnFlag5_mouseClicked(MouseEvent arg0) {
+	protected void btnFlag17_mouseClicked(MouseEvent arg0) {
 		this.txtCountryName.setText("Niger");
 		this.txtCapital.setText("Niamey");
-		this.txtCurrency.setText("West African CFA franc");
+		this.txtCurrency.setText("Franc");
 		this.txtLanguage.setText("French");
-	}
-	
-	protected void btnFlag3_mouseClicked(MouseEvent arg0) {
-		this.txtCountryName.setText("Denmark");
-		this.txtCapital.setText("Copenhagen");
-		this.txtCurrency.setText("Danish Krone");
-		this.txtLanguage.setText("Danish");
-	}
+		
+}
 }
