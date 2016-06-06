@@ -77,6 +77,17 @@ public class Main extends JFrame {
 		btnFlag4.setBounds(220, 11, 60, 40);
 		contentPane.add(btnFlag4);
 		
+		JButton btnFlag5 = new JButton("");
+		btnFlag5.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				do_btnFlag5_mouseClicked(arg0);
+			}
+		});
+		btnFlag5.setIcon(new ImageIcon("res/niger.png"));
+		btnFlag5.setBounds(290, 11, 60, 40);
+		contentPane.add(btnFlag5);
+		
 		JButton btnFlag6 = new JButton("#6");
 		btnFlag6.setBounds(10, 62, 60, 40);
 		contentPane.add(btnFlag6);
@@ -131,17 +142,6 @@ public class Main extends JFrame {
 		JButton btnFlag19 = new JButton("#19");
 		btnFlag19.setBounds(220, 164, 60, 40);
 		contentPane.add(btnFlag19);
-		
-		JButton btnFlag5 = new JButton("");
-		btnFlag5.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent arg0) {
-				do_btnFlag5_mouseClicked(arg0);
-			}
-		});
-		btnFlag5.setIcon(new ImageIcon("res/niger.png"));
-		btnFlag5.setBounds(290, 11, 60, 40);
-		contentPane.add(btnFlag5);
 		
 		JButton btnFlag10 = new JButton("#10");
 		btnFlag10.setBounds(290, 62, 60, 40);
