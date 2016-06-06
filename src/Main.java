@@ -233,7 +233,7 @@ public class Main extends JFrame {
 		this.txtCountryName.setText("New Zealand");
 		this.txtCapital.setText("Wellington");
 		this.txtCurrency.setText("New Zealand Dollar");
-		this.txtLanguage.setText("Maori, New Zealand Sign Language");
+		this.txtLanguage.setText("English, Maori, New Zealand Sign Language");
 	}
 
 	protected void do_btnFlag13_mouseClicked(MouseEvent arg0) {
