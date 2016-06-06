@@ -216,6 +216,6 @@ public class Main extends JFrame {
 		this.txtCountryName.setText("Morocco");
 		this.txtCapital.setText("Rabat");
 		this.txtCurrency.setText("Dirham");
-		this.txtLanguage.setText("Arabic, Berber");
+		this.txtLanguage.setText("Arabic; Berber");
 	}
 }
