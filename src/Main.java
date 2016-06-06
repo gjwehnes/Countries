@@ -63,6 +63,7 @@ public class Main extends JFrame {
 		btnFlag2.setBounds(80, 11, 60, 40);
 		contentPane.add(btnFlag2);
 		
+<<<<<<< master
 		JButton btnFlag3 = new JButton("");
 		btnFlag3.addMouseListener(new MouseAdapter() {
 			@Override
@@ -71,6 +72,9 @@ public class Main extends JFrame {
 			}
 		});
 		btnFlag3.setIcon(new ImageIcon("res/denmark.png"));
+=======
+		JButton btnFlag3 = new JButton("#3");
+>>>>>>> 6c954fb added denmark data
 		btnFlag3.setBounds(150, 11, 60, 40);
 		contentPane.add(btnFlag3);
 		
@@ -199,12 +203,5 @@ public class Main extends JFrame {
 		this.txtCapital.setText("Niamey");
 		this.txtCurrency.setText("West African CFA franc");
 		this.txtLanguage.setText("French");
-	}
-	
-	protected void btnFlag3_mouseClicked(MouseEvent arg0) {
-		this.txtCountryName.setText("Denmark");
-		this.txtCapital.setText("Copenhagen");
-		this.txtCurrency.setText("Danish Krone");
-		this.txtLanguage.setText("Danish");
 	}
 }
