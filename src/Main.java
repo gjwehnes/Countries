@@ -216,10 +216,10 @@ public class Main extends JFrame {
 	}
 
 	protected void btnFlag2_mouseClicked(MouseEvent arg0) {
-		this.txtCountryName.setText("Kyrgyzstan");
-		this.txtCapital.setText("Bishkek");
-		this.txtCurrency.setText("Kyrgyzstani som");
-		this.txtLanguage.setText("Kyrgyz, Russian");
+		this.txtCountryName.setText("Kyrgyzstan  [Duckland]");
+		this.txtCapital.setText("Bishkek  [Duckland]");
+		this.txtCurrency.setText("Kyrgyzstani som   [Duck Dollar]");
+		this.txtLanguage.setText("Kyrgyz, Russian   [Ducklish]");
 	}
 
 	protected void do_btnFlag5_mouseClicked(MouseEvent arg0) {
