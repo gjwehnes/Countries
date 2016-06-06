@@ -104,11 +104,11 @@ public class Main extends JFrame {
 		contentPane.add(btnFlag14);
 		
 		JButton btnFlag16 = new JButton("#16");
-		btnFlag16.setIcon( new ImageIcon("imgres.png"));
 		btnFlag16.setBounds(10, 164, 60, 40);
 		contentPane.add(btnFlag16);
 		
-		JButton btnFlag17 = new JButton("#17");
+		JButton btnFlag17 = new JButton("17");
+		btnFlag17.setIcon(new ImageIcon("res/niger-flag.gif"));
 		btnFlag17.setBounds(80, 164, 60, 40);
 		contentPane.add(btnFlag17);
 		
@@ -179,11 +179,11 @@ public class Main extends JFrame {
 		this.txtCurrency.setText("Dollar");
 		this.txtLanguage.setText("English, French");
 	}
- protected void btnFlag16_mouseClicked(MouseEvent arg0) {
-			this.txtCountryName.setText("Russia");
-			this.txtCapital.setText("Moscov");
-			this.txtCurrency.setText("Russian ruble");
-			this.txtLanguage.setText("Russian");
+	protected void btnFlag17_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Niger");
+		this.txtCapital.setText("Niamey");
+		this.txtCurrency.setText("Franc");
+		this.txtLanguage.setText("French");
 		
-	}
+}
 }
