@@ -231,7 +231,7 @@ public class Main extends JFrame {
 	protected void do_btnFlag20_mouseClicked(MouseEvent arg0) {
 		this.txtCountryName.setText("France");
 		this.txtCapital.setText("Paris");
-		this.txtCurrency.setText("Euro");
+		this.txtCurrency.setText("Euro, CFP franc");
 		this.txtLanguage.setText("French");
 	}
 }
