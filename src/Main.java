@@ -111,6 +111,19 @@ public class Main extends JFrame {
 				btnFlag11_mouseClicked(arg0);
 			}
 		});
+		
+		JButton btnFlag10 = new JButton("");
+		btnFlag10.setIcon(new ImageIcon("res/germany.png"));
+
+		btnFlag10.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				btnFlag10_mouseClicked(arg0);
+			}
+		});
+		btnFlag10.setBounds(290, 62, 60, 40);
+		contentPane.add(btnFlag10);
+		
 		btnFlag11.setIcon(new ImageIcon("res/newzealand.png"));
 		btnFlag11.setBounds(10, 113, 60, 40);
 		contentPane.add(btnFlag11);
@@ -150,9 +163,7 @@ public class Main extends JFrame {
 		btnFlag19.setBounds(220, 164, 60, 40);
 		contentPane.add(btnFlag19);
 
-		JButton btnFlag10 = new JButton("#10");
-		btnFlag10.setBounds(290, 62, 60, 40);
-		contentPane.add(btnFlag10);
+		
 
 		JButton btnFlag15 = new JButton("#15");
 		btnFlag15.setBounds(290, 113, 60, 40);
@@ -229,6 +240,13 @@ public class Main extends JFrame {
 		this.txtLanguage.setText("French");
 	}
 	
+	protected void btnFlag10_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Germany");
+		this.txtCapital.setText("Berlin");
+		this.txtCurrency.setText("Euro");
+		this.txtLanguage.setText("German");
+	}
+	
 	protected void btnFlag11_mouseClicked(MouseEvent arg0) {
 		this.txtCountryName.setText("New Zealand");
 		this.txtCapital.setText("Wellington");
@@ -249,4 +267,5 @@ public class Main extends JFrame {
 		this.txtCurrency.setText("Euro, CFP franc");
 		this.txtLanguage.setText("French");
 	}
+	
 }
