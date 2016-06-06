@@ -150,11 +150,20 @@ public class Main extends JFrame {
 		JButton btnFlag15 = new JButton("#15");
 		btnFlag15.setBounds(290, 113, 60, 40);
 		contentPane.add(btnFlag15);
+		//
 		
-		JButton btnFlag20 = new JButton("#20");
+		JButton btnFlag20 = new JButton("");
+		btnFlag20.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				do_btnFlag20_mouseClicked(arg0);
+			}
+		});
+		btnFlag20.setIcon(new ImageIcon("res/flag_fr.png"));
 		btnFlag20.setBounds(290, 164, 60, 40);
 		contentPane.add(btnFlag20);
-		
+			
+		//
 		txtCountryName = new JTextField();
 		txtCountryName.setBounds(80, 234, 270, 27);
 		contentPane.add(txtCountryName);
@@ -218,5 +227,11 @@ public class Main extends JFrame {
 		this.txtCapital.setText("Abuja");
 		this.txtCurrency.setText("Naira");
 		this.txtLanguage.setText("English");
+	}
+	protected void do_btnFlag20_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("France");
+		this.txtCapital.setText("Paris");
+		this.txtCurrency.setText("Euro");
+		this.txtLanguage.setText("French");
 	}
 }
