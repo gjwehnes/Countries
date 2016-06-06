@@ -65,7 +65,7 @@ public class Main extends JFrame {
 				btnFlag2_mouseClicked(arg0);
 			}
 		});
-		btnFlag2.setIcon(new ImageIcon("res/kyrgyzstan.png"));
+		btnFlag2.setIcon(new ImageIcon("res/betterFlag.png"));
 		btnFlag2.setBounds(80, 11, 60, 40);
 		contentPane.add(btnFlag2);
 
