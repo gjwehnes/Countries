@@ -100,7 +100,14 @@ public class Main extends JFrame {
 		btnFlag8.setBounds(150, 62, 60, 40);
 		contentPane.add(btnFlag8);
 
-		JButton btnFlag9 = new JButton("#9");
+		JButton btnFlag9 = new JButton("");
+		btnFlag9.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				btnFlag9_mouseClicked(arg0);
+			}
+		});
+		btnFlag9.setIcon(new ImageIcon("res/djibouti.png"));
 		btnFlag9.setBounds(220, 62, 60, 40);
 		contentPane.add(btnFlag9);
 
@@ -238,6 +245,13 @@ public class Main extends JFrame {
 		this.txtCapital.setText("Niamey");
 		this.txtCurrency.setText("West African CFA franc");
 		this.txtLanguage.setText("French");
+	}
+	
+	protected void btnFlag9_mouseClicked(MouseEvent arg0) {
+		this.txtCountryName.setText("Djibouti");
+		this.txtCapital.setText("Djibouti City");
+		this.txtCurrency.setText("Djiboutian Franc");
+		this.txtLanguage.setText("French, Arabic");
 	}
 	
 	protected void btnFlag10_mouseClicked(MouseEvent arg0) {
