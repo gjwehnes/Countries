@@ -108,7 +108,7 @@ public class Main extends JFrame {
 		contentPane.add(btnFlag16);
 		
 		JButton btnFlag17 = new JButton("17");
-		btnFlag17.setIcon(new ImageIcon("res/niger-flag.gif"));
+		btnFlag17.setIcon(new ImageIcon("kilarge.gif"));
 		btnFlag17.setBounds(80, 164, 60, 40);
 		contentPane.add(btnFlag17);
 		
